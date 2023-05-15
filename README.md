@@ -1,5 +1,5 @@
 # DES
-The Implementation Of CBC(Cipher Block Chaining) Mode Of Operation Using DES(Data  Encryption Standard) As The Underlying Pseu- dorandom Function
+The Implementation Of CBC(Cipher Block Chaining) Mode Of Operation Using DES(Data  Encryption Standard) As The Underlying Pseudorandom Function
 
 This files contain the c code of the CBC mode of encryption using DES as the underlying PRF. Code structure is as follows : 
 1. I first took any text file named "message.txt". Without loss of generality I assumed this file contains 8*X byte of data, where X is the number of byte. If there is file where number of byte is not a multiple of eight, I can check the number of byte of that file using the command " ls -l filename" and can append zeros to make the byte value multiple of eight.
