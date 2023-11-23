@@ -7,6 +7,14 @@ This files contain the c code of the CBC mode of encryption using DES as the und
 3. On the Decryption end I first run the Key-generation program named "Des_Keygen.c" which took a master key of 56 bit as random input and generate 16 round key of 48 bit each following the key schedule algorithm of DES in reverse order and write all the key in text file named "DesRoundKey.txt". Then I run CBC mode of decryption which took 8 byte data from the file named "ciphertext.txt" at a time, decrypt them using inverse DES as the underling PRF and write the obtained decrypted data in another file named "message1.txt", until all data of the ciphertext file read.
 
 
-To run the Encryption operation run the commands on terminal: gcc Des_Keygen.c -o  Des_Keygen && gcc DesCBCEnc.c -o DesCBCEnc && ./Des_Keygen && ./DesCBCEnc 
+To run the Encryption operation run the commands on terminal:
+```
+gcc Des_Keygen.c -o  Des_Keygen && gcc DesCBCEnc.c -o DesCBCEnc && ./Des_Keygen && ./DesCBCEnc 
+```
+
  
-To run the Decryption operation run the commands on terminal: gcc Des_Keygen.c -o  Des_Keygen && gcc DesCBCDec.c -o DesCBCDec && ./Des_Keygen && ./DesCBCDec 
+To run the Decryption operation run the commands on terminal: 
+```
+gcc Des_Keygen.c -o  Des_Keygen && gcc DesCBCDec.c -o DesCBCDec && ./Des_Keygen && ./DesCBCDec 
+```
+
